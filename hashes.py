@@ -29,10 +29,10 @@ def calc_hashes(filename):
 	
 	# Cria o dicionário com os dados necessários
 	information = {'SHA1' : sha1.hexdigest().upper(), 
-				   'MD5' : md5.hexdigest().upper(),
-				   'CRC32' : "%08X" % (crc32 & 0xFFFFFFFF),
-				   'FileName' : os.path.basename(filename),
-				   'FileSize' : os.path.getsize(filename)
-				   }
+		       'MD5' : md5.hexdigest().upper(),
+		       'CRC32' : "%08X" % (crc32 & 0xFFFFFFFF),
+		       'FileName' : os.path.basename(filename),
+		       'FileSize' : os.path.getsize(filename)
+		      }
 				   
 	return information	
